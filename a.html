@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambox Widget</title>
+  <style>
+    /* Style for the Cambox container */
+    .cambox-container {
+      width: 400px;
+      height: 300px;
+      border: 2px solid #000;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Rainbow outline animation */
+    @keyframes rainbow-outline {
+      0%   { border-color: red; }
+      16%  { border-color: orange; }
+      33%  { border-color: yellow; }
+      50%  { border-color: green; }
+      66%  { border-color: blue; }
+      83%  { border-color: indigo; }
+      100% { border-color: violet; }
+    }
+
+    /* Apply rainbow outline animation to the Cambox container */
+    .cambox-container {
+      animation: rainbow-outline 10s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="cambox-container">
+    <!-- Add your Cambox code here -->
+    <!-- For example, embed a Twitch stream -->
+    <iframe src="https://player.twitch.tv/?channel=your-channel-name&parent=your-domain.com" frameborder="0" allowfullscreen="true"></iframe>
+  </div>
+</body>
+</html>
